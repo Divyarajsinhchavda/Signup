@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Divyarajsinh Chavda - Profile Card</title>
+    <!-- Font Awesome CDN for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #74ebd5, #ACB6E5);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            width: 360px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            color: #2c3e50;
+            font-size: 26px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #555;
+            margin: 8px 0;
+        }
+
+        .button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            margin-top: 18px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #2980b9;
+        }
+
+        .socials {
+            margin-top: 22px;
+        }
+
+        .socials a {
+            text-decoration: none;
+            color: #3498db;
+            margin: 0 12px;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+
+        .socials a:hover {
+            color: #1f618d;
+        }
+
+        #contact-number {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #2c3e50;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h2>Divyarajsinh Chavda</h2>
+        <p>B.Tech Computer Engineering Student</p>
+        <p>Enrollment Number: 240905040018</p>
+        <p>Email: divyarajsinhchavda@gmail.com</p>
+
+        <button class="button" onclick="showContact()">Contact</button>
+        <div id="contact-number">📞 ‪+91 94290 95290‬</div>
+
+        <div class="socials">
+            <a href="https://instagram.com/divyarajsinh_chavda_haliyad" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.snapchat.com/add/divyarajsinh_chavda_haliyad" target="_blank" title="Snapchat">
+                <i class="fab fa-snapchat-ghost"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/divyarajsinhchavda" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function showContact() {
+            const numberDiv = document.getElementById('contact-number');
+            numberDiv.style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
